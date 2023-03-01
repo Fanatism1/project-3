@@ -452,7 +452,7 @@
   grid-template-rows: minmax(100px, 680px);
 }
 .main__section4 .main__section4-box1 {
-  background-image: url(/site4/img/bg.png);
+  background-image: url(img/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

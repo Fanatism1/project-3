@@ -11,7 +11,7 @@
 }
 
 .header {
-  background-image: url("/site4/img/IMAGE.png");
+  background-image: url("img/IMAGE.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -478,7 +478,7 @@
   line-height: 30px;
 }
 .main__section4 .main__section4-box3 {
-  background-image: url(/site4/img/bg2.png);
+  background-image: url(img/bg2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -505,7 +505,7 @@
 
 .main__section6 {
   background: #F4F5F5;
-  background-image: url(/site4/img/bg010.png);
+  background-image: url(img/bg010.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 732px;

@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap')
+
+
+*
+    box-sizing: border-box
+.container
+    display: grid
+    grid-template-rows: 768px minmax(100px, 1fr) 136px
+    grid-template-columns: minmax(100px , 2580px)
+.header
+    background-image: url("/site4/img/IMAGE.png")
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    color: #fff
+    padding-left: 5vw
+.header__block
+    padding-top: 17px
+    .nav-block
+        margin-bottom: 155px
+        padding-right: 6.25%
+    .header__nav
+        display: flex
+        justify-content: space-between
+        ul
+            display: flex
+        .header__ul-text ol
+            margin-right: 3.98vw
+            font: 400 16px Public Sans
+        .header__ul-text ol:last-child
+            margin:0
+
+#button
+    display: none
+.label
+    position: fixed
+    right: 5.2vw
+    top: 2.6vw
+    display: none
+    z-index: 2
+.img
+    height: 40px
+    width: 40px
+#button:checked ~ ul ol
+    display: block
+@media screen and ( max-width:768px  )
+    .label:hover
+        cursor: pointer
+    .header__ul-text:hover
+        cursor: pointer
+    .header__ol-text:hover
+        transform: scale(1.2)
+        font-size: 19px
+        padding-left: 10px
+        transition-duration: 0.8
+    .label
+        display: block
+    #button:checked ~ ul
+        transition-duration: 1.5s
+        right:0
+    .header__ul-text
+        transition-duration: 1.5s
+        width: 200px
+        padding: 20px
+        display: flex
+        flex-direction: column
+        line-height: 50px
+        background: #fff
+        position: fixed
+        right: -200px
+        top: 0
+        z-index:1
+        ol
+            margin-bottom: 10px
+            color: black
+    .nav-block
+        margin-bottom: 190px
+
+
+.section1
+    max-width: 545px
+    min-height: 100px
+    margin-bottom: 15.88vh
+    .section1-title
+        font: 400 38px Libre Baskerville
+        letter-spacing: 1px
+        color: #fff
+        margin-bottom: 29px
+    .section1-text
+        font: 400 18px Public Sans
+        margin-bottom: 29px
+    .section1-link
+        display: inline-block
+        text-decoration: none
+        color: #fff
+        border:1px solid grey 
+        border-radius: 80px
+        padding: 17px 33px
+        font: 400 13px Public Sans
+@media screen and ( max-width:1024px  )
+    .section1
+        max-width: 425px
+        min-height: 100px
+        margin-bottom: 15.88vh
+        .section1-title
+            font: 400 28px Libre Baskerville
+            letter-spacing: 1px
+            color: #fff
+            margin-bottom: 29px
+        .section1-text
+            font: 400 18px Public Sans
+            margin-bottom: 29px
+        .section1-link
+            display: inline-block
+            text-decoration: none
+            color: #fff
+            border:1px solid grey 
+            border-radius: 80px
+            padding: 17px 33px
+            font: 400 13px Public Sans
+@media screen and ( max-width:480px  )
+    .section1 
+        width: 300px
+        .section1-title
+            font-size: 18px
+        .section1-text
+            font-size: 14px
+    .section2
+        .section2__block
+            display: none
+    .main__container
+        .main__section1
+            .main__section1-title-box
+                .main__section1-title
+                    font-size: 20px
+
+    
+.section2
+    display: flex
+    .section2__block p 
+        font: 400 15px Public Sans
+    .section2__block
+        width: 12.89vw
+        margin-right: 2.5vw
+        .section2__title-1
+            margin-bottom: 15px
+        .section2__title
+            visibility: hidden
+            margin-bottom: 15px
+        .section2-block
+            padding-top: 17px
+            border-top: 1px solid #fff
+    .section2__block:last-child
+        margin:0
+.main__section1
+    .main__section1-title-box
+        padding-top: 120px
+        text-align: center
+        margin-bottom: 57px
+        .main__section1-title
+            font: 400 30px Libre Baskerville
+.main__section1-subtitle-box
+    display: flex
+    justify-content: center
+    align-items: center
+    .main__section1-ul-box
+        margin-bottom: 116px
+        margin-right: 3.12vw
+        text-align: center
+        padding-left: 3.90vw
+        .main__section1-ul
+            text-align: center
+            max-width: 200px
+            .main__section1-ol2
+                font: 400 15px Public Sans
+                color: #355362CC
+                height: 80px
+            .main__section1-ol1_margin-bottom
+                margin-bottom: 15px
+            .main__section1-ol1
+                .span1
+                    padding: 10px 15px
+                    color: #fff
+                    border-radius: 1000px
+                    background: #014C48
+                    font: 400 16px Public Sans
+.main__section1-ul-2
+    padding-right: 50px
+.hr1
+    height: 0.5px
+    background-color: grey
+    opacity: 0.5
+    width: 11.56vw
+    margin-left: 11.7vw
+    margin-right: 1.95vw
+    margin-bottom: 15px
+    visibility: hidden
+.hr1-1
+    visibility: hidden
+    margin-left: 10.9vw
+.main__section1-ul-3
+    text-align: start
+.main__section2
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 426px
+    .main__section2-container
+        display: flex
+        align-items: center
+        justify-content: center
+    .main__section2-box
+        width: 449px
+        margin-right: 11.17vw
+        .main__section2-title
+            font: 400 22px Public Sans
+            margin-bottom: 13px
+        .main__section2-subtitle
+            font: 400 15px Public Sans
+            color: #355362
+            margin-bottom: 57px
+        .main__section2-sub-title-link
+            font: 300 13px Public Sans
+            text-decoration: none
+            border: 1px solid grey
+            padding: 17px 33px
+            color: #000
+            border-radius: 1000px
+    .main__section2-img-box
+        display: flex
+        gap: 8px
+@media screen and ( max-width:480px  )
+    .main__section2
+        display: flex
+        align-items: center
+        justify-content: center
+        min-height: 426px
+        .main__section2-container
+            display: flex
+            align-items: center
+            justify-content: center
+        .main__section2-box
+            width: 380px
+            margin-right: 11.17vw
+            .main__section2-title
+                font: 400 16px Public Sans
+                margin-bottom: 13px
+            .main__section2-subtitle
+                font: 400 5px Public Sans
+                color: #355362
+                margin-bottom: 57px
+            .main__section2-sub-title-link
+                font: 300 13px Public Sans
+                text-decoration: none
+                border: 1px solid grey
+                padding: 17px 33px
+                color: #000
+                border-radius: 1000px
+        .main__section2-img-box
+            display: flex
+            gap: 8px
+            img
+                max-width: 480px
+        
+    
+    
+.section3__container
+    margin-bottom: 48px
+    display: flex
+    justify-content: center
+    .main__section3-container
+        margin-right: 2.5vw
+        .main__section3-block
+            width: 12.8vw
+            border-top: 0.5px solid grey
+            padding-top: 16px
+            display: flex
+            align-items: center
+            .main__section3-img
+                margin-right: 8px
+            .main__section3-text
+                font: 400 15px Public Sans
+                color:#355362
+.main__section3-container:last-child
+    margin:0
+@media screen and (max-width: 1200px)
+    .main__section2
+        padding: 0 2.5vw
+        display: flex
+        align-items: center
+        justify-content: space-around
+        height: 426px
+        .main__section2-container
+            display: flex
+            align-items: center
+            justify-content: center
+        .main__section2-box
+            width: 449px
+            margin-right: 2.5vw
+            .main__section2-title
+                font: 400 22px Public Sans
+                margin-bottom: 13px
+            .main__section2-subtitle
+                font: 400 15px Public Sans
+                color: #355362
+                margin-bottom: 57px
+            .main__section2-sub-title-link
+                font: 300 13px Public Sans
+                text-decoration: none
+                border: 1px solid grey
+                padding: 17px 33px
+                color: #000
+                border-radius: 1000px
+        .main__section2-img-box
+            display: flex
+            gap: 8px
+@media screen and (max-width: 1024px)
+    .main__section2
+        justify-content: center
+        display: flex
+        flex-direction: column
+        padding: 0 2.5vw
+        min-height: 426px
+        margin-bottom: 50px
+        .main__section2-container
+            display: flex
+            align-items: center
+            justify-content: center
+        .main__section2-box
+            width: 449px
+            margin-right: 2.5vw
+            margin-bottom: 35px
+            .main__section2-title
+                font: 400 22px Public Sans
+                margin-bottom: 13px
+            .main__section2-subtitle
+                font: 400 15px Public Sans
+                color: #355362
+                margin-bottom: 35px
+            .main__section2-sub-title-link
+                font: 300 13px Public Sans
+                text-decoration: none
+                border: 1px solid grey
+                padding: 17px 33px
+                color: #000
+                border-radius: 1000px
+        .main__section2-img-box
+            display: flex
+            gap: 8px
+
+.main__section4
+    display: grid
+    margin-bottom: 16px
+    grid-template-columns: minmax(100px, 22% ) minmax(100px,55%) minmax(100px, 22% )
+    grid-template-rows: minmax(100px, 680px)
+    .main__section4-box1
+        background-image: url(/site4/img/bg.png)
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+    .main__section4-box2
+        background: #001414
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .main__section4-box2-block
+            width: 42vw
+            .main__section4-title
+                margin-bottom: 21px
+                font: 400 22px Public Sans
+                color: #fff
+            .main__section4-text
+                font: 400 15px Public Sans
+                color: #fff
+                line-height: 30px
+    .main__section4-box3
+        background-image: url(/site4/img/bg2.png)
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+.main__section5
+    margin-bottom: 28px
+    .main__section5-block
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 0.546vw
+        .main__section5-text1
+            font: 400 11px Public Sans
+            color:#355362
+        img
+            width: 12.5vw
+            max-width: 250px
+            height: auto
+.main__section6
+    background: #F4F5F5
+    background-image: url(/site4/img/bg010.png)
+    background-size: cover
+    background-repeat: no-repeat
+    height: 732px
+    background-position: center
+.main__section7
+    height: 472px
+    background: #F4F5F5
+    .main__section7-block
+        display: flex
+        justify-content: center
+        .main__section7-title
+            font: 400 31px Libre Baskerville
+            max-width: 424px
+            margin-right: 13.12vw
+        .main_section7-ul-box
+            margin-right: 48px
+        .main__section7-ul
+            display: block
+            width: 248px
+            margin-bottom: 36px
+            .main__section7-ol-1
+                font: 400 17px Public Sans
+                margin-bottom: 4px
+            .main__section7-ol-2
+                font: 400 17px Public Sans
+                display: block
+                height: 100px
+                color: #355362 
+                opacity: 0.8
+.main__section7-block:last-child
+    margin: 0
+.main__section7-ol-1_width
+    width: 248px
+.main__section7-ol-2_width
+    width: 256px
+.main__section7-ol-3_width
+    width: 263px
+.main__section7-ol-4_width
+    width: 256px
+@media screen and ( max-width:1200px  )
+    .main__section7
+        padding-left: 2.5vw
+        height: 472px
+        background: #F4F5F5
+        .main__section7-block
+            display: flex
+            justify-content: center
+            .main__section7-title
+                font: 400 31px Libre Baskerville
+                max-width: 424px
+                margin-right: 13.12vw
+            .main_section7-ul-box
+                margin-right: 48px
+            .main__section7-ul
+                display: block
+                width: 248px
+                margin-bottom: 36px
+                .main__section7-ol-1
+                    font: 400 17px Public Sans
+                    margin-bottom: 4px
+                .main__section7-ol-2
+                    font: 400 17px Public Sans
+                    display: block
+                    height: 100px
+                    color: #355362 
+                    opacity: 0.8
+    .main__section7-block:last-child
+        margin: 0
+    .main__section7-ol-1_width
+        width: 248px
+    .main__section7-ol-2_width
+        width: 256px
+    .main__section7-ol-3_width
+        width: 263px
+    .main__section7-ol-4_width
+        width: 256px
+@media screen and ( max-width:1024px  )
+    .main__section7
+        overflow: hidden
+        padding-left: 5.64vw
+        height: 472px
+        background: #F4F5F5
+        .main__section7-block
+            display: flex
+            justify-content: center
+            .main__section7-title
+                font: 400 25px Libre Baskerville
+                max-width: 424px
+                margin-right: 3.12vw
+            .main_section7-ul-box
+                margin-right: 48px
+            .main__section7-ul
+                display: block
+                width: 24vw
+                margin-bottom: 46px
+                .main__section7-ol-1
+                    font: 400 17px Public Sans
+                    margin-bottom: 10px
+                .main__section7-ol-2
+                    font: 400 17px Public Sans
+                    display: block
+                    height: 100px
+                    color: #355362 
+                    opacity: 0.8
+    .main__section7-block:last-child
+        margin: 0
+    .main__section7-ol-1_width
+        width: 24.2vw
+    .main__section7-ol-2_width
+        width: 25vw
+    .main__section7-ol-3_width
+        width: 25.6vw
+    .main__section7-ol-4_width
+        width: 25vw
+    
+.main__section8
+    height: 568px
+    padding: 0 64px
+    .main__section8-title-block
+        padding-top: 87px
+        margin-bottom: 33px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .main__section8-title
+            font: 400 27px Libre Baskerville
+        .main__section8-link
+            font: 400 13px Public Sans
+            color: #00413E
+            padding: 17px 33px
+            border: 1px solid grey
+            border-radius: 1000px
+            text-decoration: none
+    .main__section8-info-container
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    .main__section8-info-box
+        height: 176px
+        padding-top: 16px
+        border-top: 0.5px solid grey
+        width: 26.79vw
+        .main__section-info-block
+            display: flex
+            align-items: center
+            margin-bottom: 7px
+            .main__section8-info-img
+                margin-right: 1.25vw
+            .main__section8-info-text1
+                margin-right: 1.25vw
+                font: 400 11px Public Sans
+                color: #355362
+            .main__section8-info-text2
+                font: 400 11px Public Sans
+                color: #355362
+    .main__section8-info-text3-block
+        .main__section8-info-text3
+            font: 400 17px Public Sans
+            color: #00413E
+.main__section9
+    background-color: #001F1F
+    min-height: 630px
+    padding: 146px 0 0 5vw
+    display: flex
+    .main__section9-text-block
+        margin-right: 11.81vw
+        width: 25.46vw
+        .main__section9-title
+            font: 400 36px Libre Baskerville
+            margin-bottom: 43px
+            color: #FAFAFA
+        .main__section-text
+            font: 400 18px Public Sans
+            margin-bottom: 47px
+            color: #FAFAFA
+        .main__section9-link
+            background: #00665F
+            font: 400 14px Public Sans
+            border: 0.5px solid grey
+            border-radius: 1000px
+            padding: 16px 32px
+            text-decoration: none
+            color: #fff
+.main__section10
+    background-color: #001414
+    height: 553px
+    padding: 122px 0 0 5vw
+    display: flex
+    .main__section10-block
+        .main__section10-ul
+            line-height: 15px
+            .main__section10-ol-title
+                font: 400 11px Public Sans
+                color: #7D9798
+                margin-bottom: 24px
+            .main__section10-ol-hr
+                margin-bottom: 23px
+                width: 15px
+                height: 1px
+                background-color: #25B895
+            .main__section10-ol
+                color: #EDECEB
+                font: 400 15px Public Sans
+                margin-bottom: 15px
+.section10-1
+    margin-right: 10.46vw
+.section10-2
+    margin-right: 3.9vw
+.section10-3
+    margin-right: 38.59vw
+@media screen and ( max-width:1024px  )
+    .main__section10
+        background-color: #001414
+        height: 553px
+        padding: 122px 0 0 5vw
+        display: flex
+        .main__section10-block
+            .main__section10-ul
+                line-height: 15px
+                .main__section10-ol-title
+                    font: 400 11px Public Sans
+                    color: #7D9798
+                    margin-bottom: 24px
+                .main__section10-ol-hr
+                    margin-bottom: 23px
+                    width: 15px
+                    height: 1px
+                    background-color: #25B895
+                .main__section10-ol
+                    color: #EDECEB
+                    font: 400 15px Public Sans
+                    margin-bottom: 15px
+    .section10-1
+        margin-right: 10.46vw
+    .section10-2
+        margin-right: 3.9vw
+    .section10-3
+        margin-right: 25.59vw
+.footer
+    display: flex
+    justify-content: space-between
+    padding: 40px 64px 0 64px
+    background-color: #000F0F
+    .footer-block-text
+        .footer-text1
+            color: #E5ECEC
+            text-align: right
+            margin-bottom: 8px
+        .footer-text2
+            color: #E5ECEC
+
+
+    
+   
